@@ -14,5 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('login');
+});
+
+Route::get('/voting', function () {
+    return view('voting');
+});
+
+Route::get('/admin', function () {
+    return view('admin');
+});
+
+Route::get('/sidebar', function () {
+    return view('sidebar');
 });
